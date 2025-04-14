@@ -1,73 +1,281 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Nourishing Health - Beyond the Filter Podcast</title>  
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 0;  
-            background-color: #f4f4f4;  
-            color: #333;  
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Nourishing Health - Beyond the Filter Podcast</title>    
+    <style>    
+        body {    
+            font-family: Arial, sans-serif;    
+            margin: 0;    
+            padding: 0;    
+            background-color: #000000;    
+            color: #ffffff;    
+            border: 10px solid #ff69b4;    
+            min-height: 100vh;  
+            box-sizing: border-box;  
+        }    
+        header {    
+            background-color: #008080;    
+            color: white;    
+            padding: 20px;    
+            text-align: center;    
+            border-bottom: 5px solid #ff69b4;  
+        }    
+        .container {    
+            width: 80%;    
+            margin: auto;    
+            overflow: hidden;    
+            padding: 20px 0;    
+        }    
+        .video-container {    
+            position: relative;    
+            width: 100%;    
+            padding-bottom: 56.25%; /* 16:9 ratio */    
+            margin-bottom: 20px;    
+            border: 3px solid #ff69b4;  
+        }    
+        .video-container iframe, .video-container video {    
+            position: absolute;    
+            top: 0;    
+            left: 0;    
+            width: 100%;    
+            height: 100%;    
+        }    
+        footer {    
+            background-color: #333;    
+            color: white;    
+            text-align: center;    
+            padding: 10px 0;    
+            position: fixed;    
+            left: 0;    
+            bottom: 0;    
+            width: 100%;    
+            border-top: 5px solid #ff69b4;  
         }  
-        header {  
-            background-color: #008080;  
-            color: white;  
-            padding: 20px;  
-            text-align: center;  
-        }  
-        .container {  
-            width: 80%;  
-            margin: auto;  
-            overflow: hidden;  
-            padding: 20px 0;  
-        }  
-        .video-container {  
-            position: relative;  
-            width: 100%;  
-            padding-bottom: 56.25%; /* 16:9 ratio */  
-            margin-bottom: 20px;  
-        }  
-        .video-container iframe, .video-container video {  
-            position: absolute;  
-            top: 0;  
-            left: 0;  
-            width: 100%;  
-            height: 100%;  
-        }  
-        footer {  
+        nav {  
             background-color: #333;  
+            overflow: hidden;  
+            border-bottom: 5px solid #ff69b4;  
+        }  
+        nav a {  
+            float: left;  
+            display: block;  
             color: white;  
             text-align: center;  
-            padding: 10px 0;  
-            position: fixed;  
-            left: 0;  
-            bottom: 0;  
-            width: 100%;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+            font-weight: bold;  
         }  
-    </style>  
-</head>  
-<body>  
-    <header>  
-        <h1>Nourishing Health - Beyond the Filter</h1>  
-        <p>Insights on Nutrition and ESKD Management</p>  
-    </header>  
-    <div class="container">  
-        <section>  
-            <h2>Featured Episode</h2>  
-            <p>Welcome to Nourishing Health! In our latest episode, we dive deep into facets of nutrition that are particularly critical for managing End-Stage Kidney Disease (ESKD). Stay tuned as we share interviews with experts, and practical tips on embracing a healthier lifestyle.</p>  
-        </section>  
-<section class="video-container">    
-    <!-- Insert your video below. The following iframe is a placeholder for your embedded video. Replace the src attribute with your video link (e.g., YouTube embed link) -->    
-    <iframe src="https://www.youtube.com/embed/6QLgHvw0Bfc" frameborder="0" allowfullscreen></iframe>    
-</section>  
+        nav a:hover {  
+            background-color: #ff69b4;  
+            color: black;  
+        }  
+        .kidney-image {  
+            float: right;  
+            width: 200px;  
+            margin: 20px;  
+            border: 3px solid #ff69b4;  
+        }  
+        .references {  
+            background-color: #222;  
+            padding: 20px;  
+            margin-top: 20px;  
+            border: 3px solid #ff69b4;  
+            white-space: pre-line;  
+        }  
+    </style>    
+</head>    
+<body>    
+    <nav>  
+        <a href="#home">Home</a>  
+        <a href="#references">References</a>  
+    </nav>  
+      
+    <header>    
+        <h1>Nourishing Health - Beyond the Filter</h1>    
+        <p>Insights on Nutrition and ESKD Management</p>    
+    </header>    
+      
+    <div class="container">    
+        <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-0d0c-6230-a206-cb0a459bc8d6/raw?se=2025-04-14T04%3A29%3A16Z&sp=r&sv=2024-08-04&sr=b&scid=19f3446c-3e5f-5a45-b1f6-db4b965756eb&skoid=e872f19f-7b7f-4feb-9998-20052dec61d6&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-14T03%3A17%3A26Z&ske=2025-04-15T03%3A17%3A26Z&sks=b&skv=2024-08-04&sig=n45aB7VEUDUvVRsmhwRY0bgfbQSMFQCfRqkQxrHdgGs%3D" alt="Kidney Illustration" class="kidney-image">  
+          
+        <section>    
+            <h2>Featured Episode</h2>    
+            <p>Welcome to Nourishing Health! In our latest episode, we dive deep into facets of nutrition that are particularly critical for managing End-Stage Kidney Disease (ESKD). Stay tuned as we share interviews with experts, and practical tips on embracing a healthier lifestyle.</p>    
+        </section>    
+
+         </div>  
+          </div>  
+           </div>  
+          <div>
+        <section class="video-container">        
+                <!-- Video with reduced size -->  
+                <iframe src="https://www.youtube.com/embed/6QLgHvw0Bfc" frameborder="-10" allowfullscreen></iframe>        
+            </section>  
+            <style>  
+    /* ... other styles ... */  
+      
+    .video-container {  
+        position: relative;  
+        width: 80%; /* Reduce this percentage to make the video smaller */  
+        margin: 0 auto; /* This centers the video container */  
+        padding-bottom: 45%; /* This maintains the 16:9 aspect ratio (80% × 9/16 = 22.5%) */  
+        height: 0;  
+        overflow: hidden;  
+    }  
+      
+    .video-container iframe {  
+        position: absolute;  
+        top: 0;  
+        left: 0;  
+        width: 100%;  
+        height: 100%;  
+    }  
+    /* ... other styles ... */  
+</style>  
+        </div>  
     </div>  
-    
-    <script>  
-        // You can add interactive JavaScript code here if needed in the future.  
-        console.log('Website script loaded.');  
-    </script>  
-</body>  
+</div> 
+</div> 
+</div> 
+</div> 
+        <section id="references">  
+            <h2>"End Stage Chronic Kidney Disease” Annotated Bibliography </h2>  
+            <div class="references">  
+<p> Gupta R, Woo K, Yi AJ. Epidemiology of end-stage kidney disease. Semin Vasc Surg. 
+2021;34(1):71-78. doi:10.1053/j.semvascsurg.2021.02.010.</p>  
+<p>This comprehensive review examines the epidemiology of end-stage kidney disease 
+(ESKD) with an emphasis on trends in incidence and prevalence, causes, and treatment 
+modalities in the United States. Gupta and colleagues synthesize data from national 
+registries and the published literature, highlighting that diabetes, hypertension, and 
+glomerular disease remain the principal etiologies of ESKD. The review details that 
+ESKD incidence and prevalence have steadily risen, with significant racial and ethnic 
+disparities, particularly affecting Blacks, Hispanics, and older adults. In terms of clinical 
+presentation, ESKD is characterized by a severely reduced glomerular filtration rate 
+(GFR less than 15 mL/min/1.73 m²) or other markers of kidney damage, with common 
+symptoms including fatigue, edema, and signs of volume overload. Treatment options are 
+comprehensively discussed; while dialysis (both hemodialysis and peritoneal dialysis) 
+remains the mainstay, kidney transplantation is underscored as providing superior 
+longterm survival benefits. The article also notes statistically significant differences (p < 0.05) 
+in outcome measures among treatment modalities and highlights the additional burden 
+imposed by the COVID-19 pandemic, marked by higher hospitalization and mortality 
+rates among ESKD patients. Key strengths of this review include its broad scope, 
+integration of cost and patient-reported outcomes, and focus on vascular access issues 
+and disparities, while limitations primarily relate to its review design and focus on US 
+data, which may impact extrapolation to other regions. This resource offers valuable 
+insights by linking epidemiological trends to clinical presentation, treatment outcomes, 
+and healthcare policy implications.</p>  
+
+<p>Thurlow J, Joshi M, Yan G., et al. Global epidemiology of end-stage kidney disease and 
+disparities in kidney replacement therapy. Am J Nephrol. 2021;52(2):98-107. 
+doi:10.11590/0000514550</p>  
+<p>This article presents a comprehensive review of the global epidemiology of end-stage 
+kidney disease (ESKD) and disparities in kidney replacement therapy (KRT) access 
+worldwide. The authors conducted an extensive analysis of international registry data and 
+published literature to examine variations in ESKD incidence, prevalence, and treatment 
+outcomes across different regions. The findings reveal that while incidence rates of 
+treated ESKD have stabilized in many high-income countries, they have increased 
+substantially in East and Southeast Asia. Statistical analysis demonstrates significant 
+disparities in KRT access between high-income and low-to-middle-income countries, 
+with unadjusted 5-year survival rates showing marked differences: 41% in the United 
+States, 48% in Europe, and 60% in Japan (p less than 0.001). The study highlights that
+the number of people dying prematurely due to lack of KRT access is estimated to be up to three 
+times higher than those receiving treatment in resource-limited settings. The authors 
+identify variations in dialysis practices, including vascular access methods, session 
+duration, and treatment adequacy as significant contributors to differences in patient 
+outcomes globally. A key strength of this research is its global perspective, providing 
+valuable comparative data on ESKD management across diverse healthcare systems. 
+However, the authors acknowledge limitations in data consistency across countries, 
+which may affect the reliability of some comparisons. This article serves as an essential 
+reference for understanding the international landscape of ESKD management and 
+provides critical evidence to inform healthcare policy and future research initiatives 
+addressing global kidney disease burden.</p> 
+
+<p>Zha Y, Qian Q. Protein nutrition and malnutrition in CKD and ESRD. Nutrients. 
+2017;9(3):208. doi:10.3390/nu9030208</p> 
+<p>This article examines the complex interplay between protein nutrition and malnutrition in 
+patients with chronic kidney disease (CKD) and end-stage renal disease (ESRD). Zha and 
+Qian review how metabolic acidosis, systemic inflammation, hormonal dysregulation, 
+and the accumulation of uremic toxins contribute to hypercatabolism and a negative 
+nitrogen balance in CKD/ESRD. They provide practical nutritional recommendations: for 
+non-dialysis CKD patients, an intake of 0.6–0.8 g/kg/day (with >50% high biological 
+value proteins) is advised, whereas for patients on peritoneal or hemodialysis, 1.0–1.2 
+g/kg/day is recommended, with a daily energy intake of 30–35 kcal/kg based on ideal 
+body weight. Although the article does not present any explicit statistical data or p values, 
+it establishes that adequate protein intake is critical for reducing the risk of 
+protein-energy wasting. A notable strength of this work is its comprehensive review of 
+the derangements leading to protein malnutrition; however, the lack of original research 
+data and reliance on retrospective analyses and secondary evidence are acknowledged 
+limitations. This resource is valuable for explaining the rationale behind nutritional 
+strategies in CKD and ESRD and for discussing approaches to prevent malnutrition while 
+optimizing dialysis outcomes.</p>  
+
+<p>Okamura M, Inoue T, Ogawa M, et al. Rehabilitation nutrition in patients with chronic 
+kidney disease and cachexia. Nutrients. 2022;14:4722. doi:10.3390/nu14224722</p> 
+<p>This review article summarizes current evidence regarding rehabilitation nutrition 
+interventions for patients with chronic kidney disease (CKD) and cachexia. It emphasizes 
+that as CKD progresses to end stage kidney disease (ESKD), there is a critical shift in 
+dietary needs requiring more aggressive nutritional and exercise interventions to counter 
+protein-energy wasting and loss of skeletal muscle mass. The article advocates a 
+multidimensional approach combining nutritional therapy and physical rehabilitation, 
+including personalized dietary planning and goal setting, to improve patient outcomes. 
+This evidence provides a scientific basis for discussing nutrition therapy in the podcast, 
+particularly the dietary modifications necessary during the transition from CKD to 
+ESKD. This entry details that the review by Okamura et al. (2022) in Nutrients discusses 
+rehabilitation nutrition interventions for CKD patients experiencing cachexia. It 
+emphasizes that as CKD progresses to ESKD, more aggressive and individualized 
+nutritional and exercise interventions are needed to counteract protein-energy wasting 
+and loss of muscle mass. This evidence supports a scientific basis for discussing nutrition 
+therapy in the podcast, particularly for addressing the dietary modifications required 
+during the transition from CKD to ESKD.</p>  
+ 
+<p>Cupisti A, Kovesdy CP, D'Alessandro C, et al. Dietary approach to recurrent or chronic 
+hyperkalemia in patients with decreased kidney function. Nutrients. 2018;10(3):261. 
+doi:10.3390/nu10030261</p>  
+<p>This review article examines dietary interventions for managing recurrent or chronic 
+hyperkalemia in patients with decreased kidney function, particularly those with chronic 
+kidney disease (CKD) and end-stage kidney disease (ESKD). The authors provide a 
+comprehensive overview of dietary strategies to control potassium levels, including 
+limiting potassium intake to less than 3 g per day, increasing fiber consumption to 
+promote beneficial gut bacteria growth, and reducing acid load through appropriate fruit 
+and vegetable selection. The article emphasizes the importance of patient education 
+regarding high-potassium foods, cooking methods that reduce potassium content, and 
+awareness of hidden potassium sources such as food additives and salt substitutes. While 
+the review does not present original statistical data or significance values, it synthesizes 
+current clinical guidelines and evidence-based recommendations for hyperkalemia 
+management. A notable strength of this work is its practical approach to integrating 
+dietary modifications with pharmacological interventions in a comprehensive treatment 
+strategy. However, as a narrative review rather than an experimental study, it does not 
+contribute new clinical data to the field. This resource provides valuable insights for 
+healthcare professionals developing nutritional plans for CKD and ESKD patients at risk 
+of hyperkalemia, offering a balanced perspective on dietary management within the 
+broader context of kidney disease care. This study will be beneficial for explaining how 
+nutrition plays a role in managing potassium levels in dialysis patients.</p>  
+
+<p>AbiKharma J, ElNakouzi J, Abboud M, et al. Malnutrition and its risk factors in renal 
+patients on dialysis. Proc Nutr Soc. 2024;83(OCE4):E428. doi:10.1017/S0029665124006669</p>  
+<p>This study assessed malnutrition prevalence and associated risk factors among patients 
+with end stage kidney disease (ESKD) on hemodialysis in Lebanon. Using a cross sectional design, 
+the authors evaluated 119 patients from two dialysis centers by 
+collecting demographic data, nutritional intake via 24-hour recall and food frequency 
+questionnaires, anthropometric measures, biochemical markers, and body composition 
+(via bioelectrical impedance measured post‐dialysis). They also assessed nutritional 
+knowledge and treatment adherence using validated questionnaires. A striking 85.5% of 
+participants met the Global Leadership Initiative on Malnutrition (GLIM) criteria for 
+malnutrition, with lower education, poor nutrition knowledge, and inadequate caloric 
+intake being prominent among those affected. This study underscores the necessity for 
+individualized nutrition strategies to improve compliance and mitigate malnutrition risk 
+in ESKD patients, supporting my discussion on personalized dietary interventions in 
+dialysis care.</p>  
+            </div>  
+        </section>  
+    </div>    
+      
+      
+    <script>    
+        // You can add interactive JavaScript code here if needed in the future.    
+        console.log('Website script loaded.');    
+    </script>    
+</body>    
 </html>  
